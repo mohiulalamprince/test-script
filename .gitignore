@@ -1,6 +1,6 @@
-env/*
+env/
 *.pyc
-gs-env/*
+gs-env/
 *.py~
 *.jpg
 
