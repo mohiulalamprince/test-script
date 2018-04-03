@@ -1,0 +1,442 @@
+{
+    "id": "0",
+    "name": "root",
+    "icon": "red",
+    "displayText": "Start",
+    "type": "root",
+    "cssClass": "",
+    "isVisible": true,
+    "parent": "",
+    "children": [
+        {
+            "id": 101,
+            "name": "menu",
+            "icon": "gray",
+            "displayText": "menu",
+            "type": "menu",
+            "cssClass": "",
+            "isVisible": true,
+            "parent": "",
+            "parentElement": null,
+            "children": [
+                {
+                    "id": 102,
+                    "name": "play",
+                    "icon": "blue",
+                    "displayText": "Play",
+                    "type": "play",
+                    "cssClass": "",
+                    "isVisible": true,
+                    "parent": "",
+                    "externalBranch": true,
+                    "children": [
+                        {
+                            "name": "play",
+                            "type": "play",
+                            "icon": "icon-play.png",
+                            "displayText": "play",
+                            "parent": "play",
+                            "id": 9,
+                            "color": "",
+                            "data": {
+                                "type6": {
+                                    "filename": "random_2.mp3",
+                                    "directory": false,
+                                    "directoryPath": "",
+                                    "part": false,
+                                    "partNumber": 1,
+                                    "stopOnDtmf": false,
+                                    "continueAfterHangup": false,
+                                    "consoleoutput": "this is the console log"
+                                }
+                            },
+                            "children": [
+                                {
+                                    "name": "repeat",
+                                    "type": "repeat",
+                                    "icon": "icon-repeat.png",
+                                    "displayText": "repeat",
+                                    "parent": "play",
+                                    "id": 11,
+                                    "color": "",
+                                    "data": {
+                                        "type6": {
+                                            "looptype": "endless",
+                                            "count": 1,
+                                            "whileCondition": "",
+                                            "consoleoutput": ""
+                                        }
+                                    },
+                                    "children": [
+                                        {
+                                            "name": "play",
+                                            "type": "play",
+                                            "icon": "icon-play.png",
+                                            "displayText": "play",
+                                            "parent": "repeat",
+                                            "id": 16,
+                                            "color": "",
+                                            "data": {
+                                                "type6": {
+                                                    "filename": "play_repeat1.mp3",
+                                                    "directory": false,
+                                                    "directoryPath": "",
+                                                    "part": false,
+                                                    "partNumber": 1,
+                                                    "stopOnDtmf": false,
+                                                    "continueAfterHangup": false,
+                                                    "consoleoutput": "this is the console log"
+                                                }
+                                            },
+                                            "children": [
+                                                {
+                                                    "name": "play",
+                                                    "type": "play",
+                                                    "icon": "icon-play.png",
+                                                    "displayText": "play",
+                                                    "parent": "play",
+                                                    "id": 18,
+                                                    "color": "",
+                                                    "data": {
+                                                        "type6": {
+                                                            "filename": "play_repeat2.mp3",
+                                                            "directory": false,
+                                                            "directoryPath": "",
+                                                            "part": false,
+                                                            "partNumber": 1,
+                                                            "stopOnDtmf": false,
+                                                            "continueAfterHangup": false,
+                                                            "consoleoutput": "this is the console log"
+                                                        }
+                                                    },
+                                                    "children": [
+                                                        {
+                                                            "name": "record",
+                                                            "type": "record",
+                                                            "icon": "icon-record.png",
+                                                            "displayText": "record",
+                                                            "parent": "play",
+                                                            "id": 20,
+                                                            "color": "",
+                                                            "data": {
+                                                                "type6": {
+                                                                    "filename": "",
+                                                                    "directory": false,
+                                                                    "directoryPath": "",
+                                                                    "timeout": false,
+                                                                    "timeoutDuration": 1,
+                                                                    "stopOnDtmf": false,
+                                                                    "continueAfterHangup": false,
+                                                                    "consoleoutput": "",
+                                                                    "marginLeft": 0
+                                                                }
+                                                            },
+                                                            "children": [
+                                                                {
+                                                                    "name": "placeholder",
+                                                                    "type": "placeholder",
+                                                                    "parent": "",
+                                                                    "id": 21,
+                                                                    "color": "",
+                                                                    "data": {
+                                                                        "type6": {}
+                                                                    },
+                                                                    "children": []
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "name": "play",
+                                            "type": "play",
+                                            "icon": "icon-play.png",
+                                            "displayText": "play",
+                                            "parent": "repeat",
+                                            "id": 22,
+                                            "color": "",
+                                            "data": {
+                                                "type6": {
+                                                    "filename": "ending_1.mp3",
+                                                    "directory": false,
+                                                    "directoryPath": "",
+                                                    "part": true,
+                                                    "partNumber": 1,
+                                                    "stopOnDtmf": true,
+                                                    "continueAfterHangup": false,
+                                                    "consoleoutput": "log"
+                                                }
+                                            },
+                                            "children": [
+                                                {
+                                                    "name": "record",
+                                                    "type": "record",
+                                                    "icon": "icon-record.png",
+                                                    "displayText": "record",
+                                                    "parent": "play",
+                                                    "id": 24,
+                                                    "color": "",
+                                                    "data": {
+                                                        "type6": {
+                                                            "filename": "last_record.mp3",
+                                                            "directory": false,
+                                                            "directoryPath": "",
+                                                            "timeout": true,
+                                                            "timeoutDuration": 5,
+                                                            "stopOnDtmf": true,
+                                                            "continueAfterHangup": true,
+                                                            "consoleoutput": "last console log of tree",
+                                                            "marginLeft": 0
+                                                        }
+                                                    },
+                                                    "children": [
+                                                        {
+                                                            "name": "placeholder",
+                                                            "type": "placeholder",
+                                                            "parent": "",
+                                                            "id": 25,
+                                                            "color": "",
+                                                            "data": {
+                                                                "type6": {}
+                                                            },
+                                                            "children": []
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ],
+                    "data": {
+                        "type6": {
+                            "filename": "tune.mp3",
+                            "directory": true,
+                            "continueAfterHangup": true,
+                            "consoleoutput": "first console log after menu break"
+                        }
+                    }
+                },
+                {
+                    "id": 104,
+                    "name": "play",
+                    "icon": "blue",
+                    "displayText": "Play",
+                    "type": "play",
+                    "cssClass": "",
+                    "isVisible": true,
+                    "parent": "menu",
+                    "children": [
+                        {
+                            "name": "play",
+                            "type": "play",
+                            "icon": "icon-play.png",
+                            "displayText": "play",
+                            "parent": "play",
+                            "id": 1,
+                            "color": "",
+                            "data": {
+                                "type6": {
+                                    "filename": "",
+                                    "directory": false,
+                                    "directoryPath": "",
+                                    "part": false,
+                                    "partNumber": 1,
+                                    "stopOnDtmf": false,
+                                    "continueAfterHangup": false,
+                                    "consoleoutput": ""
+                                }
+                            },
+                            "children": [
+                                {
+                                    "name": "record",
+                                    "type": "record",
+                                    "icon": "icon-record.png",
+                                    "displayText": "record",
+                                    "parent": "play",
+                                    "id": 3,
+                                    "color": "",
+                                    "data": {
+                                        "type6": {
+                                            "filename": "",
+                                            "directory": false,
+                                            "directoryPath": "",
+                                            "timeout": false,
+                                            "timeoutDuration": 1,
+                                            "stopOnDtmf": false,
+                                            "continueAfterHangup": false,
+                                            "consoleoutput": "",
+                                            "marginLeft": 0
+                                        }
+                                    },
+                                    "children": [
+                                        {
+                                            "name": "placeholder",
+                                            "type": "placeholder",
+                                            "parent": "",
+                                            "id": 4,
+                                            "color": "",
+                                            "data": {
+                                                "type6": {}
+                                            },
+                                            "children": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ],
+                    "data": {
+                        "type6": {
+                            "filename": "welcome.mp3",
+                            "directory": true,
+                            "directoryPath": "c://tunes/",
+                            "part": false,
+                            "stopOnDtmf": true,
+                            "continueAfterHangup": true,
+                            "consoleoutput": "playing welcome tune"
+                        }
+                    }
+                },
+                {
+                    "id": 105,
+                    "name": "play",
+                    "icon": "blue",
+                    "displayText": "Play",
+                    "type": "play",
+                    "cssClass": "",
+                    "isVisible": true,
+                    "parent": "menu",
+                    "children": [
+                        {
+                            "name": "play",
+                            "type": "play",
+                            "icon": "icon-play.png",
+                            "displayText": "play",
+                            "parent": "play",
+                            "id": 5,
+                            "color": "",
+                            "data": {
+                                "type6": {
+                                    "filename": "",
+                                    "directory": false,
+                                    "directoryPath": "",
+                                    "part": false,
+                                    "partNumber": 1,
+                                    "stopOnDtmf": false,
+                                    "continueAfterHangup": false,
+                                    "consoleoutput": ""
+                                }
+                            },
+                            "children": [
+                                {
+                                    "name": "placeholder",
+                                    "type": "placeholder",
+                                    "parent": "",
+                                    "id": 6,
+                                    "color": "",
+                                    "data": {
+                                        "type6": {}
+                                    },
+                                    "children": []
+                                }
+                            ]
+                        }
+                    ],
+                    "data": {
+                        "type6": {
+                            "filename": "another.mp3",
+                            "directory": true,
+                            "directoryPath": "c://tunes/",
+                            "stopOnDtmf": true,
+                            "consoleoutput": "another log on menu item"
+                        }
+                    }
+                },
+                {
+                    "id": 106,
+                    "name": "play",
+                    "icon": "blue",
+                    "displayText": "Play",
+                    "type": "play",
+                    "cssClass": "",
+                    "isVisible": true,
+                    "parent": "menu",
+                    "children": [
+                        {
+                            "name": "record",
+                            "type": "record",
+                            "icon": "icon-record.png",
+                            "displayText": "record",
+                            "parent": "play",
+                            "id": 7,
+                            "color": "",
+                            "data": {
+                                "type6": {
+                                    "filename": "record1.mp3",
+                                    "directory": false,
+                                    "directoryPath": "",
+                                    "timeout": true,
+                                    "timeoutDuration": 8,
+                                    "stopOnDtmf": true,
+                                    "continueAfterHangup": true,
+                                    "consoleoutput": "this is the console log",
+                                    "marginLeft": 0
+                                }
+                            },
+                            "children": [
+                                {
+                                    "name": "play",
+                                    "type": "play",
+                                    "icon": "icon-play.png",
+                                    "displayText": "play",
+                                    "parent": "record",
+                                    "id": 14,
+                                    "color": "",
+                                    "data": {
+                                        "type6": {
+                                            "filename": "player.mp3",
+                                            "directory": false,
+                                            "directoryPath": "",
+                                            "part": true,
+                                            "partNumber": 1,
+                                            "stopOnDtmf": false,
+                                            "continueAfterHangup": false,
+                                            "consoleoutput": "console log"
+                                        }
+                                    },
+                                    "children": [
+                                        {
+                                            "name": "placeholder",
+                                            "type": "placeholder",
+                                            "parent": "",
+                                            "id": 15,
+                                            "color": "",
+                                            "data": {
+                                                "type6": {}
+                                            },
+                                            "children": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ],
+                    "data": {
+                        "type6": {
+                            "filename": "random.mp3",
+                            "stopOnDtmf": true,
+                            "continueAfterHangup": true,
+                            "consoleoutput": "another console log"
+                        }
+                    }
+                }
+            ]
+        }
+    ]
+}
+

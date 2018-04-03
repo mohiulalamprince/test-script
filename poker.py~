@@ -1,0 +1,11 @@
+class Hand(object):
+
+    def __init__(self, str):
+        self.str = str
+        self.status = 'disable'
+        
+    def __str__(self):
+        return "<hand [%s], '%s'>" % (self.str, self.status)
+
+hand = Hand("hello")
+print hand

@@ -1,0 +1,7 @@
+The map call is similar to the list comprehension expression. 
+But map applies a function call to each item instead of an arbitrary expression. 
+Because of this limitation, it is somewhat less general tool. 
+In some cases, however, map may be faster to run than a list comprehension such as when mapping a built-in function. And map requires less coding.
+If function is None, the identity function is assumed; if there are multiple arguments, 
+map() returns a list consisting of tuples containing the corresponding items from all iterables (a kind of transpose operation). 
+The iterable arguments may be a sequence or any iterable object; the result is always a list:
